@@ -12,6 +12,8 @@
         <StackPanel>
             <TextBlock Text="/Scenario/Storyboard.xaml"></TextBlock>
             <Button Content="Navigate!" Click="Button_Click"></Button>
+            <TextBlock Text="/Scenario/DeviceInfo.xaml"></TextBlock>
+            <Button Content="Navigate!" Click="Button_Click_1"></Button>
         </StackPanel>
     </Grid>
 </Page>

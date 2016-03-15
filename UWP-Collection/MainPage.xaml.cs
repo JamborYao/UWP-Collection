@@ -36,5 +36,10 @@ namespace UWP_Collection
         {
             SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Scenario.DeviceInfo));
+        }
     }
 }
