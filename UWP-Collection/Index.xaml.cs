@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,6 +26,29 @@ namespace UWP_Collection
         public Index()
         {
             this.InitializeComponent();
+            Models.Scenarios myScenario = new Models.Scenarios();
+            this.scenarios = myScenario.scenarios;
+            ScenarioControl.ItemsSource = this.scenarios;
         }
+        public List<Models.Scenario> scenarios { get; set; }
+
+        private void ScenarioControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ListBox clickItem = sender as ListBox;
+            Models.Scenario item = clickItem.SelectedItem as Models.Scenario;
+            if (item != null)
+            {
+                this.ScenarioFrame.Navigate(item.ClassType);
+                if (Window.Current.Bounds.Width < 640)
+                {
+                    Splitter.IsPaneOpen = false;
+                }
+            }
+        }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+        }
+
     }
 }
