@@ -9,5 +9,9 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+        <StackPanel>
+            <TextBlock Text="/Scenario/Storyboard.xaml"></TextBlock>
+            <Button Content="Navigate!" Click="Button_Click"></Button>
+        </StackPanel>
     </Grid>
 </Page>
