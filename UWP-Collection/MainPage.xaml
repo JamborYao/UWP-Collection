@@ -16,6 +16,8 @@
             <Button Content="Navigate!" Click="Button_Click_1"></Button>
             <TextBlock Text="/Scenario/ListViewGroup.xaml"></TextBlock>
             <Button Content="Navigate!" Click="List_view_click"></Button>
+            <TextBlock Text="/Scenario/ADAuth.xaml"></TextBlock>
+            <Button Content="Navigate!" Click="ADAuth_click"></Button>
         </StackPanel>
     </Grid>
 </Page>

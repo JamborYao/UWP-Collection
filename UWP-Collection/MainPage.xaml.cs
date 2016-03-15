@@ -45,6 +45,11 @@ namespace UWP_Collection
         {
             this.Frame.Navigate(typeof(Scenario.ListviewGroup));
         }
-      
+        private void ADAuth_click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Scenario.ADAuth));
+        }
+        
+
     }
 }
