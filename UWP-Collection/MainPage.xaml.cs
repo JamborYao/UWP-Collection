@@ -41,5 +41,10 @@ namespace UWP_Collection
         {
             this.Frame.Navigate(typeof(Scenario.DeviceInfo));
         }
+        private void List_view_click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Scenario.ListviewGroup));
+        }
+      
     }
 }

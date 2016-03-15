@@ -99,9 +99,13 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scenario\DeviceInfo.xaml.cs">
       <DependentUpon>DeviceInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario\ListviewGroup.xaml.cs">
+      <DependentUpon>ListviewGroup.xaml</DependentUpon>
     </Compile>
     <Compile Include="Scenario\Storyboard.xaml.cs">
       <DependentUpon>Storyboard.xaml</DependentUpon>
@@ -133,6 +137,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Scenario\DeviceInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Scenario\ListviewGroup.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
