@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Core;
 
 namespace UWP_Collection
 {
@@ -76,6 +77,22 @@ namespace UWP_Collection
             }
             // Ensure the current window is active
             Window.Current.Activate();
+            SystemNavigationManager.GetForCurrentView().BackRequested += App_BackRequested;
+        }
+        public event EventHandler<BackRequestedEventArgs> OnBackRequested;
+        private void App_BackRequested(object sender, BackRequestedEventArgs e)
+        {
+            if (OnBackRequested != null) { OnBackRequested(this, e); }
+
+            if (!e.Handled)
+            {
+                Frame frame = Window.Current.Content as Frame;
+                if (frame.CanGoBack)
+                {
+                    frame.GoBack();
+                    e.Handled = true;
+                }
+            }
         }
 
         /// <summary>
