@@ -50,5 +50,9 @@ namespace UWP_Collection
             SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Splitter.IsPaneOpen = !Splitter.IsPaneOpen;
+        }
     }
 }
