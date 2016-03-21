@@ -23,15 +23,29 @@ namespace UWP_Collection
     /// </summary>
     public sealed partial class Index : Page
     {
+        public string content = string.Empty;
+        public delegate void MyDelegateEvent(string name, string language);
         public Index()
         {
             this.InitializeComponent();
             Models.Scenarios myScenario = new Models.Scenarios();
             this.scenarios = myScenario.scenarios;
             ScenarioControl.ItemsSource = this.scenarios;
+            MyDelegateEvent test = new MyDelegateEvent((name, language) =>
+            {
+                content += "executed!";
+            });
+            if (test != null)
+            {
+                test("jambor","chinese");
+            }
+            content += "aaa";
         }
         public List<Models.Scenario> scenarios { get; set; }
 
+        
+
+       
         private void ScenarioControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             ListBox clickItem = sender as ListBox;

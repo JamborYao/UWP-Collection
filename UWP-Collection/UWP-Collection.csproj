@@ -115,6 +115,9 @@
     <Compile Include="Scenario\ListviewGroup.xaml.cs">
       <DependentUpon>ListviewGroup.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Scenario\MyContactLIst.xaml.cs">
+      <DependentUpon>MyContactLIst.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Scenario\Storyboard.xaml.cs">
       <DependentUpon>Storyboard.xaml</DependentUpon>
     </Compile>
@@ -160,10 +163,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Scenario\MyContactLIst.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Scenario\Storyboard.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PortableLibrary\PortableLibrary.csproj">
+      <Project>{1b104e0a-9cb5-4f69-b884-0b7e2c8f87b5}</Project>
+      <Name>PortableLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
