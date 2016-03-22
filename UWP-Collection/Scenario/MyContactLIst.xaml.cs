@@ -31,7 +31,7 @@ namespace UWP_Collection.Scenario
         {
             var contactstore = await Windows.ApplicationModel.Contacts.ContactManager.RequestStoreAsync(Windows.ApplicationModel.Contacts.ContactStoreAccessType.AppContactsReadWrite);
             var a=await contactstore.FindContactListsAsync();
-            ContactListSyncManager sync = new ContactListSyncManager();
+           // ContactListSyncManager sync = new ContactListSyncManager();
 
 
 

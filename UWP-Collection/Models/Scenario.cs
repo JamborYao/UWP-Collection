@@ -20,6 +20,7 @@ namespace UWP_Collection.Models
             scenarios.Add(new Scenario() { Title = "DeviceInfo", ClassType = typeof(UWP_Collection.Scenario.DeviceInfo) });
             scenarios.Add(new Scenario() { Title = "ListviewGroup", ClassType = typeof(UWP_Collection.Scenario.ListviewGroup) });
             scenarios.Add(new Scenario() { Title = "Storyboard", ClassType = typeof(UWP_Collection.Scenario.Storyboard) });
+            scenarios.Add(new Scenario() { Title = "Dialog", ClassType = typeof(UWP_Collection.Scenario.Dialog) });
         }
         public List<Scenario> scenarios { get; set; }
     }
