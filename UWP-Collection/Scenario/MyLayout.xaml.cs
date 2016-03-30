@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.ApplicationModel.Contacts;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -21,22 +20,11 @@ namespace UWP_Collection.Scenario
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MyContactLIst : Page
+    public sealed partial class MyLayout : Page
     {
-        public MyContactLIst()
+        public MyLayout()
         {
             this.InitializeComponent();
-        }
-        public async void GetMyContact()
-        {
-            var contactstore = await Windows.ApplicationModel.Contacts.ContactManager.RequestStoreAsync(Windows.ApplicationModel.Contacts.ContactStoreAccessType.AppContactsReadWrite);
-            var a=await contactstore.FindContactListsAsync();
-         //   ContactListSyncManager sync = new ContactListSyncManager();
-
-
-
-
-
         }
     }
 }

@@ -115,11 +115,17 @@
     <Compile Include="Scenario\Dialog.xaml.cs">
       <DependentUpon>Dialog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Scenario\FileHandle.xaml.cs">
+      <DependentUpon>FileHandle.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Scenario\ListviewGroup.xaml.cs">
       <DependentUpon>ListviewGroup.xaml</DependentUpon>
     </Compile>
     <Compile Include="Scenario\MyContactLIst.xaml.cs">
       <DependentUpon>MyContactLIst.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario\MyLayout.xaml.cs">
+      <DependentUpon>MyLayout.xaml</DependentUpon>
     </Compile>
     <Compile Include="Scenario\Storyboard.xaml.cs">
       <DependentUpon>Storyboard.xaml</DependentUpon>
@@ -166,11 +172,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Scenario\FileHandle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Scenario\ListviewGroup.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Scenario\MyContactLIst.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Scenario\MyLayout.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
