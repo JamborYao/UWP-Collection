@@ -121,6 +121,9 @@
     <Compile Include="Scenario\ListviewGroup.xaml.cs">
       <DependentUpon>ListviewGroup.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Scenario\Logging.xaml.cs">
+      <DependentUpon>Logging.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Scenario\MyContactLIst.xaml.cs">
       <DependentUpon>MyContactLIst.xaml</DependentUpon>
     </Compile>
@@ -130,6 +133,9 @@
     <Compile Include="Scenario\Storyboard.xaml.cs">
       <DependentUpon>Storyboard.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Scenario\xBind.xaml.cs">
+      <DependentUpon>xBind.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -138,6 +144,8 @@
     <None Include="UWP-Collection_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\splash-sdk.png" />
+    <Content Include="Assets\threadsample-spash.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -180,6 +188,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Scenario\Logging.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Scenario\MyContactLIst.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -189,6 +201,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Scenario\Storyboard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Scenario\xBind.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

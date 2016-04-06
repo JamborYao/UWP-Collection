@@ -23,6 +23,8 @@ namespace UWP_Collection.Models
             scenarios.Add(new Scenario() { Title = "Dialog", ClassType = typeof(UWP_Collection.Scenario.Dialog) });
             scenarios.Add(new Scenario() { Title = "MyLayout", ClassType = typeof(UWP_Collection.Scenario.MyLayout) });
             scenarios.Add(new Scenario() { Title = "File", ClassType = typeof(UWP_Collection.Scenario.FileHandle) });
+            scenarios.Add(new Scenario() { Title = "xBind", ClassType = typeof(UWP_Collection.Scenario.xBind) });
+            scenarios.Add(new Scenario() { Title = "Logging", ClassType = typeof(UWP_Collection.Scenario.Logging) });
         }
         public List<Scenario> scenarios { get; set; }
     }
