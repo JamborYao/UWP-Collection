@@ -25,6 +25,7 @@ namespace UWP_Collection.Models
             scenarios.Add(new Scenario() { Title = "File", ClassType = typeof(UWP_Collection.Scenario.FileHandle) });
             scenarios.Add(new Scenario() { Title = "xBind", ClassType = typeof(UWP_Collection.Scenario.xBind) });
             scenarios.Add(new Scenario() { Title = "Logging", ClassType = typeof(UWP_Collection.Scenario.Logging) });
+            scenarios.Add(new Scenario() { Title = "WebViewTest", ClassType = typeof(UWP_Collection.Scenario.WebViewTest) });
         }
         public List<Scenario> scenarios { get; set; }
     }

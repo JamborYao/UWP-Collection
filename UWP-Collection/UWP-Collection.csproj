@@ -133,6 +133,9 @@
     <Compile Include="Scenario\Storyboard.xaml.cs">
       <DependentUpon>Storyboard.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Scenario\WebViewTest.xaml.cs">
+      <DependentUpon>WebViewTest.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Scenario\xBind.xaml.cs">
       <DependentUpon>xBind.xaml</DependentUpon>
     </Compile>
@@ -201,6 +204,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Scenario\Storyboard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Scenario\WebViewTest.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
