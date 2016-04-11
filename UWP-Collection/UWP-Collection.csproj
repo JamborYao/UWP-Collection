@@ -121,6 +121,9 @@
     <Compile Include="Scenario\ListviewGroup.xaml.cs">
       <DependentUpon>ListviewGroup.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Scenario\ListViewMulitySelect.xaml.cs">
+      <DependentUpon>ListViewMulitySelect.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Scenario\Logging.xaml.cs">
       <DependentUpon>Logging.xaml</DependentUpon>
     </Compile>
@@ -188,6 +191,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Scenario\ListviewGroup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Scenario\ListViewMulitySelect.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
